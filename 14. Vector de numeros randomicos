@@ -1,0 +1,12 @@
+Programa 14: Llenar un arreglo de n elementos con numeros aleatorios
+
+import random
+
+def llenarConAleatorios(n):
+    vector = [0] * n
+    for i in range(n):
+        vector[i] = random.randint(1,10)
+    return vector
+
+n = int(input("¿Cuantos numeros desea visualizar?: "))
+print(llenarConAleatorios(n))
