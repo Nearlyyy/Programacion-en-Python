@@ -1,0 +1,13 @@
+Programa 9: Mostrar la serie de fibonacci de n elementos
+
+# Funcion para hallar la serie fibonacci recursivamente
+def fibonacci(n: int):
+    if(n <= 1):
+        return n
+    else:
+        return fibonacci(n -1) + fibonacci(n-2)
+    
+cantidadDeNumeros = int(input("¿Cuántos números desea que aparezcan?: "))
+
+for i in range(cantidadDeNumeros):
+    print(fibonacci(i))
