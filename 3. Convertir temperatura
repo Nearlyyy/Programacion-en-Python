@@ -1,0 +1,7 @@
+Programa 3: Convertir una temperatura (en celsius) a fahrenheit
+
+temperatura = float(input("Ingrese una temperatura en celsius y convertirla a fahrenheit: "))
+
+fahrenheit = ((9 / 5) * temperatura) + 32
+
+print(temperatura," °C en grados fahrenheit es ",fahrenheit," °F")
