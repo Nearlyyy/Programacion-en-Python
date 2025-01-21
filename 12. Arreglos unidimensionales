@@ -1,0 +1,8 @@
+Programa 12: Inicializar un arreglo / vector con ceros
+
+n = int(input("Ingrese la cantidad de elementos para el arreglo: "))
+
+A = [0] * n
+
+for i in range(0,n):
+    print(A[i])
