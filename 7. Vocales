@@ -1,0 +1,12 @@
+Programa 7: Contar las vocales de una cadena
+
+vocales = "aeiouAEIOU" # Cadena que contiene todas las vocales (minusculas y mayusculas)
+contador = 0
+
+cadena = input("Ingrese una cadena: ")
+
+for caracter in cadena: # Recorre cada caracter de la cadena
+    if (caracter in vocales): # Verifica si el caracter se halla en la cadena de vocales
+        contador += 1 # En caso de ser cierto, el contador aumentará en 1
+
+print(f"En la palabra '{cadena}' existen {contador} vocales")
