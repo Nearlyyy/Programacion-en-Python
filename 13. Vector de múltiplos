@@ -1,0 +1,11 @@
+Programa 13: Llenar un vector de n elementos con los multiplos de un numero especificado
+
+n = int(input("Ingrese la cantidad de elementos para el arreglo: "))
+multiplo = int(input("Ingrese de que numero desea obtener sus multiplos: "))
+
+A = []
+
+for i in range(0, n):
+    A.append((i+1) * multiplo)
+
+print(A)
