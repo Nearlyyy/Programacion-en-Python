@@ -1,0 +1,23 @@
+Programa 15: Determinar si un número ingresado es primo
+
+def esPrimo(numero: int): 
+    if(numero <= 1):
+        return False # los números menores o iguales a 1 no son ni primos ni compuestos
+    
+    raizCuadrada = int(numero ** 0.5) 
+    # se determinará solo hasta la raiz cuadrada del número
+    # esto optimiza el proceso
+    
+    for i in range(2, raizCuadrada + 1, 1):
+        if(numero % i == 0):
+            return False # Un numero primo solo es divisible para 1 y para si mismo
+        
+    return True
+   
+
+numero = int(input("Ingrese un número: "))
+
+if(esPrimo(numero)):
+    print(f"{numero} es primo")
+else:
+    print(f"{numero} no es primo")
