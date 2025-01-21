@@ -1,0 +1,26 @@
+Programa 17: Sumar los elementos de un vector de enteros
+
+import random
+
+def sumarElementos(miLista: int):
+    suma = 0
+    for i in miLista:
+        suma += i
+
+    return suma
+
+def llenarArreglo(miLista: int):
+    for i in range (len(miLista)):
+        miLista[i] = random.randint(1,100)
+
+    return miLista
+
+
+n = int(input("Ingrese cuantos elementos quiere en el arreglo: "))
+
+lista = [0] * n
+
+llenarArreglo(lista)
+
+print(lista)
+print("La suma de los elementos es ",sumarElementos(lista))
