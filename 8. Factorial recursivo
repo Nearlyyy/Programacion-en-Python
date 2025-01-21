@@ -1,0 +1,18 @@
+Programa 8: Calcular el factorial de un numero haciendo uso de la recursividad
+
+# Funcion para hallar el factorial recursivamente
+def factorial(n: int):
+
+    if(n == 0 or n == 1):
+        return 1
+    
+    return n * factorial (n - 1)
+
+
+# Ingreso del numero para calcular el factorial
+numero = int(input("Ingrese un número para calcular su factorial: "))
+
+if(numero < 0):
+    print("No existe factorial de numeros negativos")
+else:
+    print(f"{numero}! = {factorial(numero)}")
