@@ -1,0 +1,6 @@
+Programa 2: Ingresar 2 números y sumarlos
+
+numero = int(input("Ingrese un numero: "))
+numero2 = int(input("Ingrese otro número: "))
+
+print("La suma de ",numero," y ",numero2," es ",(numero + numero2))
