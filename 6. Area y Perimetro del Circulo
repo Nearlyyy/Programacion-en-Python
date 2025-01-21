@@ -1,0 +1,11 @@
+Programa 6: Calcular el area y perimetro de un circulo
+
+PI = 3.1416
+
+radio = float(input("Ingrese el radio del circulo: "))
+
+if(radio < 0):
+    print("Se ha ingresado un radio negativo")
+else:
+    print("El área del circulo es: ", PI * radio * radio, "cm^2")
+    print("El perimetro del circulo es: ", 2 * PI * radio," cm")
